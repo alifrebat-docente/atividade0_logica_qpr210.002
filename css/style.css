@@ -10,6 +10,7 @@ form{
     background-color: #ffffff;
     padding: 20px;
     margin: 20px 0px;
+    width: 400px;
 }
 
 label, input{
@@ -23,7 +24,7 @@ label{
 }
 
 #resultado{
-    width: 100%;
+    width: 400px;
     height: 250px;
     background-color: #ffffff;
     padding: 20px;
