@@ -8,7 +8,7 @@ formDados.addEventListener('submit', (evt) => {
 
     const form_num = new FormData(formDados)
 
-    let nome = parseFloat(form_num.get('nome'))
+    let nome = form_num.get('nome')
     let altura = parseFloat(form_num.get('altura'))
     let peso = parseFloat(form_num.get('peso'))
 
@@ -28,6 +28,8 @@ formDados.addEventListener('submit', (evt) => {
         faixa_risco = 'Obesidade II'
     }
 
-    divResultado.innerHTML = `${nome}, se imc é de ${imc.toFixed(2).replace('.', ',')}, sua faxia de risco é  ${faixa_risco}`
+    divResultado.innerHTML = `${nome}, seu imc é de ${imc.toFixed(2).replace('.', ',')}, sua faxia de risco é  ${faixa_risco}`
+
+    formDados.reset()
 
 })
