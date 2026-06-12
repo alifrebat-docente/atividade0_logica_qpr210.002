@@ -43,3 +43,23 @@ label{
     font-size: 1.2em;
     border-radius: 8px;
 }
+
+img{
+    margin: 20px auto;
+}
+
+table, tr, td, th{
+    border: 1px solid #ffffff;
+}
+
+table{
+    margin: 20px auto;
+    width: 400px;
+}
+
+th{
+    text-align: center;
+}
+td{
+    padding-left: 10px;
+}
