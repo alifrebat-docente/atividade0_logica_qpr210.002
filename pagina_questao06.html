@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 06</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/scripts_questao03.js" defer></script>
+</head>
+
+<body>
+    <div id="geral">
+        <h3>
+            <p>Um endocrinologista deseja controlar a saúde de seus
+                pacientes e, para isto, se utiliza do Índice de Massa
+                Corporal (IMC). Sabendo-se que o IMC é calculado através
+                da seguinte fórmula:</p>
+
+            <img src="imagens/imc.png" alt="peso divido pela altura ao quadrado"
+                title="peso divido pela altura ao quadrado">
+
+            <p>Fazer um algoritmo que apresente o nome do paciente
+                e sua faixa de risco, baseando-se na seguinte
+                tabela:</p>
+            <table>
+                <tr>
+                    <th>IMC</th>
+                    <th>FAIXA DE RISCO</th>
+                </tr>
+                <tr>
+                    <td>Abaixo de 20</td>
+                    <td>Abaixo do peso</td>
+                </tr>
+                <tr>
+                    <td>A partir de 20 até 25</td>
+                    <td>Normal</td>
+                </tr>
+                <tr>
+                    <td>A partir de 25 até 30</td>
+                    <td>Sobrepeso</td>
+                </tr>
+                <tr>
+                    <td>A partir de 30 até 35</td>
+                    <td> Obesidade I</td>
+                </tr>
+                <tr>
+                    <td> Acima de 35 </td>
+                    <td> Obesidade II</td>
+                </tr>
+                
+
+            </table>
+
+        </h3>
+
+        <form id="formulario">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome">
+
+            <label for="altura">Altura</label>
+            <input type="text" name="altura" id="altura">
+
+            <label for="peso">Peso</label>
+            <input type="text" name="peso" id="peso">
+
+            <button type="submit"> Calcular </button>
+            <button type="reset"> Limpar </button>
+
+        </form>
+
+        <div id="resultado">
+
+        </div>
+    </div>
+
+</body>
+
+</html>
