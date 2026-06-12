@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 02</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/scripts_questao03.js" defer></script>
+</head>
+
+<body>
+    <div id="geral">
+        <h3>
+            O usuário deverá informar:
+
+            <ul>
+                <li>A distância a ser percorrida (em quilômetros);</li>
+                <li>O consumo médio do veículo (em km/l);</li>
+                <li>O preço do litro do combustível.</li>
+            </ul>
+
+            Com base nessas informações, o algoritmo deve calcular e
+            exibir:
+
+            <ul>
+                <li>A quantidade de combustível necessário para percorrer
+                    o trajeto;</li>
+                <li>O valor total a pagar com combustível para esse
+                    deslocamento.</li>
+            </ul>
+
+        </h3>
+
+        <form id="formulario">
+            <label for="km">Quilometro a Percorrer</label>
+            <input type="text" name="km" id="km">
+
+            <label for="consumo">Consumo médio do veículo</label>
+            <input type="text" name="consumo" id="consumo">
+
+            <label for="valor">Valor Combustível</label>
+            <input type="text" name="valor" id="valor">
+
+            <button type="submit"> Calcular </button>
+            <button type="reset"> Limpar </button>
+
+        </form>
+
+        <div id="resultado">
+
+        </div>
+    </div>
+
+</body>
+
+</html>
