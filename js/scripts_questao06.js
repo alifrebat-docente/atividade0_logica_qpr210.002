@@ -8,12 +8,26 @@ formDados.addEventListener('submit', (evt) => {
 
     const form_num = new FormData(formDados)
 
-    let km = parseFloat(form_num.get('km'))
-    let consumo = parseFloat(form_num.get('consumo'))
-    let valor = parseFloat(form_num.get('valor'))
+    let nome = parseFloat(form_num.get('nome'))
+    let altura = parseFloat(form_num.get('altura'))
+    let peso = parseFloat(form_num.get('peso'))
 
-    let totalCombustivel = km / consumo
+    let imc = parseFloat(peso) / parseFloat((altura * altura))
 
-    divResultado.innerHTML = `Total de combustível necessário ${totalCombustivel.toFixed(2).replace('.',',')}l. Valor a pagar R$ ${parseFloat(totalCombustivel * valor).toFixed(2).replace('.',',')}`
+    let faixa_risco = ''
+
+    if (imc < 20) {
+        faixa_risco = 'Abaixo do peso'
+    } else if (imc < 25) {
+        faixa_risco = 'Normal'
+    } else if (imc < 30) {
+        faixa_risco = 'Sobrepeso'
+    } else if (imc < 35) {
+        faixa_risco = 'Obesidade I'
+    } else {
+        faixa_risco = 'Obesidade II'
+    }
+
+    divResultado.innerHTML = `${nome}, se imc é de ${imc.toFixed(2).replace('.', ',')}, sua faxia de risco é  ${faixa_risco}`
 
 })
